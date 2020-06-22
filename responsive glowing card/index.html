@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responsive glowing card</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div id="progressbar"></div>
+    <div class="box">
+        <div class="imgBx">
+            <img src="four.jpg">           
+        </div>
+    <div class="content">
+        <h2>Shubham Arya<br><span>age:20</span></h2>
+    </div>
+    </div>
+    </div>
+    <div class="box">
+        <div class="imgBx">
+            <img src="second.jpg">           
+        </div>
+    <div class="content">
+        <h2>Shubham Arya<br><span>fitness freak</span></h2>
+    </div>
+    </div>
+    <div class="box">
+        <div class="imgBx">
+            <img src="third.jpg">           
+        </div>
+    <div class="content">
+        <h2>Shubham Arya<br><span>GYM LOVER</span></h2>
+    </div>
+    </div>
+    <div class="box">
+        <div class="imgBx">
+            <img src="second.jpg">           
+        </div>
+    <div class="content">
+        <h2>Shubham Arya<br><span>Six Packs</span></h2>
+    </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script type="text/javascript">
+   $(window).scroll(function(){
+       var scroll = $(window).scrollTop(),
+       dh = $(document).height(),
+       wh = $(window).height();
+       scrollPercent = (scroll/(dh-wh)) * 720;
+       $('#progressbar').css('height', scrollPercent)
+   })
+</script>
+</body>
+</html>
